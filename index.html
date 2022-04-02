@@ -23,15 +23,21 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                <a href="index.html"><img src="img/logo.png" class="img-fluid" alt=""/></a>
+           
+                
                 <div class="row">
+                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/logo.png" class="img-fluid" alt=""/></a>
+                    </div>
                     <div class="col">
                         <h1>NuCamp</h1>
                         <h2>a better way to camp</h2>
                     </div>
+                    <div class="col-md-4 col-lg-2 mt-4">
+                        <a href=#reserveForm class="btn btn-info btn-sm activ mt-4" role="button">Reserve Campsite</a>
+                    </div>
                 </div>
-            </div>
+        </div>
         </div>
     </header>
 
@@ -70,14 +76,20 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 order-sm-first col-md-3">
                 <h2 class="text-sm-left">Featured Campsitesed</h2>
             </div>
             <div class="col">
+                <div class="media">              
+                <div class="media-body align-self-center">
                 <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
             </div>
+            <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb campsite" />
+            </div>
+            </div>
         </div>
+        
 
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
@@ -92,6 +104,47 @@
                     </div>
                 </div>
             </div>
+    </div>
+    <div class="row row-content">
+        <div class="col col-sm-6 mx-auto">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h3>Reserve a Campsite</h3>
+                </div>
+                <div class="card-body">
+                    <form id="reserveForm">
+                        <div class="form-group row">
+                            <label for="nuCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                            <div class="col-sm-6">
+                                <select name="nuCampers" id="nuCampers" class="form-control">
+                                    <option selected>Select....</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyy">
+                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col">
+                                 <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                        </form>
+                 </div>
+                    
+            </div>
+        </div>
+
+    </div>
     </div>
     <footer class="site-footer">
         <div class="container">
@@ -127,4 +180,4 @@
 
 </body>
 
-</html> 
+</html>
