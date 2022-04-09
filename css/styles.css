@@ -15,7 +15,7 @@ header h2 {
 }
 
 .site-footer{
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: linear-gradient(,#CEC8FF white);
     padding: 20px 0;
 }
 
@@ -47,5 +47,5 @@ header h2 {
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid #5637DD ;
 }
